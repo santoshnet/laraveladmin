@@ -1,6 +1,8 @@
 @extends('layouts.login-layout')
 
-
+@section('title')
+    Register 
+@endsection
 @section('content')
   
    <div class="signup-form">
@@ -11,24 +13,24 @@
             <p>Fill out this form to start your free trial!</p>
         </div>
         <div class="form-group">
-            <label>{{ __('Name') }}</label>
-            <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+            <label for="name">{{ __('Name') }}</label>
+             <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus/>
 
-                @if ($errors->has('name'))
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('name') }}</strong>
-                    </span>
-                @endif
+                    @if ($errors->has('name'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('name') }}</strong>
+                        </span>
+                    @endif
         </div>
         <div class="form-group">
-            <label>{{ __('E-Mail Address') }}</label>
-            <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+             <label for="email">{{ __('E-Mail Address') }}</label>
+             <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
 
-                @if ($errors->has('name'))
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('name') }}</strong>
-                    </span>
-                @endif
+                    @if ($errors->has('email'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
         </div>
         <div class="form-group">
             <label>{{ __('Password') }}</label>

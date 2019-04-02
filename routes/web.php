@@ -26,5 +26,10 @@ Route::group(['middleware' => 'auth'], function () {
 	    return view('welcome');
 	});
 
+	Route::get('logout', function (){
+        Auth::logout();
+        return redirect('/');
+    });
+
 });
 

@@ -1,7 +1,7 @@
 @extends('layouts.login-layout')
 
 @section('title')
-    login 
+    Login 
 @endsection
 
 @section('content')

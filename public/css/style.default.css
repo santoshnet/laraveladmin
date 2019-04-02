@@ -168,7 +168,7 @@ section header {
 
 @media (min-width: 768px) {
   .container-fluid {
-    padding: 0 3rem;
+    padding: 0 0rem;
   }
 }
 
@@ -328,7 +328,7 @@ nav.navbar a.menu-btn {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background: #292929;
+  
   color: #fff;
   text-align: center;
   padding: 0 !important;
