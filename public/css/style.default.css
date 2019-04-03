@@ -154,7 +154,7 @@ h2 {
 }
 
 .section-padding {
-  padding: 3rem 0;
+  padding: 0rem 0;
 }
 
 .section-no-padding-bottom {
@@ -745,6 +745,7 @@ nav.navbar a.menu-btn:hover {
   background: #fff;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
+  padding: 10px;
 }
 
 .dashboard-header .check-lists {

@@ -6,61 +6,36 @@
      <section class="dashboard-counts section-padding">
           <div class="container-fluid">
             <div class="row">
-              <!-- Count item widget-->
-              <div class="col-xl-2 col-md-4 col-6">
-                <div class="wrapper count-title d-flex">
-                  <div class="icon"><i class="icon-user"></i></div>
-                  <div class="name"><strong class="text-uppercase">New Clients</strong><span>Last 7 days</span>
-                    <div class="count-number">25</div>
+                <div class="col-lg-3 col-xs-6">
+                  <div class="rad-info-box rad-txt-success card">
+                    <i class="fa fa-windows"></i>
+                    <span class="heading">Microsoft</span>
+                    <span class="value"><span>4949</span></span>
                   </div>
                 </div>
-              </div>
-              <!-- Count item widget-->
-              <div class="col-xl-2 col-md-4 col-6">
-                <div class="wrapper count-title d-flex">
-                  <div class="icon"><i class="icon-padnote"></i></div>
-                  <div class="name"><strong class="text-uppercase">Work Orders</strong><span>Last 5 days</span>
-                    <div class="count-number">400</div>
+                <div class="col-lg-3 col-xs-6">
+                  <div class="rad-info-box rad-txt-primary card">
+                    <i class="fa fa-facebook"></i>
+                    <span class="heading">Facebook</span>
+                    <span class="value"><span>23K</span></span>
                   </div>
                 </div>
-              </div>
-              <!-- Count item widget-->
-              <div class="col-xl-2 col-md-4 col-6">
-                <div class="wrapper count-title d-flex">
-                  <div class="icon"><i class="icon-check"></i></div>
-                  <div class="name"><strong class="text-uppercase">New Quotes</strong><span>Last 2 months</span>
-                    <div class="count-number">342</div>
+                <div class="col-lg-3 col-xs-6">
+                  <div class="rad-info-box rad-txt-danger card">
+                    <i class="fa fa-google-plus"></i>
+                    <span class="heading">Google</span>
+                    <span class="value"><span>49M</span></span>
                   </div>
                 </div>
-              </div>
-              <!-- Count item widget-->
-              <div class="col-xl-2 col-md-4 col-6">
-                <div class="wrapper count-title d-flex">
-                  <div class="icon"><i class="icon-bill"></i></div>
-                  <div class="name"><strong class="text-uppercase">New Invoices</strong><span>Last 2 days</span>
-                    <div class="count-number">123</div>
+                <div class="col-lg-3 col-xs-6">
+                  <div class="rad-info-box card">
+                    <i class="fa fa-apple"></i>
+                    <span class="heading">Apple</span>
+                    <span class="value"><span>10.9K</span></span>
                   </div>
                 </div>
-              </div>
-              <!-- Count item widget-->
-              <div class="col-xl-2 col-md-4 col-6">
-                <div class="wrapper count-title d-flex">
-                  <div class="icon"><i class="icon-list"></i></div>
-                  <div class="name"><strong class="text-uppercase">Open Cases</strong><span>Last 3 months</span>
-                    <div class="count-number">92</div>
-                  </div>
-                </div>
-              </div>
-              <!-- Count item widget-->
-              <div class="col-xl-2 col-md-4 col-6">
-                <div class="wrapper count-title d-flex">
-                  <div class="icon"><i class="icon-list-1"></i></div>
-                  <div class="name"><strong class="text-uppercase">New Cases</strong><span>Last 7 days</span>
-                    <div class="count-number">70</div>
-                  </div>
-                </div>
-              </div>
             </div>
+             
           </div>
         </section>
         <!-- Header Section-->
@@ -69,7 +44,7 @@
             <div class="row d-flex align-items-md-stretch">
               
               <!-- Pie Chart-->
-              <div class="col-lg-6 col-md-6">
+              <div class="col-lg-6 col-md-6 ">
                 <div class="card project-progress">
                   <h2 class="display h4">Project Beta progress</h2>
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -127,7 +102,7 @@
                   </div>
                   <div class="page-statistics d-flex justify-content-between">
                     <div class="page-statistics-left"><span>Pages Visits</span><strong>230</strong></div>
-                    <div class="page-statistics-right"><span>New Visits</span><strong>73.4%</strong></div>
+                    <div class="page-statistics-right"><span>New Visits</span><strong>3.4%</strong></div>
                   </div>
                 </div>
               </div>

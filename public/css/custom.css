@@ -10,45 +10,179 @@
     padding-bottom: 5px;
 }
 
- .searchbar{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 60px;
-    background-color: #353b48;
-    border-radius: 30px;
-    padding: 10px;
-    }
+.searchbar{
+margin-bottom: auto;
+margin-top: auto;
+height: 60px;
+background-color: #353b48;
+border-radius: 30px;
+padding: 10px;
+}
 
-    .search_input{
-    color: white;
+.search_input{
+color: white;
+border: 0;
+outline: 0;
+background: none;
+width: 0;
+caret-color:transparent;
+line-height: 40px;
+transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+padding: 0 10px;
+width: 450px;
+caret-color:red;
+transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+background: white;
+color: #e74c3c;
+}
+
+.search_icon{
+height: 40px;
+width: 40px;
+float: right;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+color:white;
+}
+
+.rounded-circle {
+border-radius: 50%!important;
+border: 2px solid #ffffff45;
+}
+
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+    position: relative;
+    border: 0 none;
+    -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+}
+.card-stats .card-footer {
+    padding: 0px 15px 15px;
+}
+.card .card-footer {
+    background-color: transparent;
     border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
+}
+.card-footer:last-child {
+    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
 
-    .searchbar:hover > .search_input{
-    padding: 0 10px;
-    width: 450px;
-    caret-color:red;
-    transition: width 0.4s linear;
-    }
+.card-stats .icon-big {
+    font-size: 3em;
+    min-height: 64px;
+}
+.card-stats .icon-big i {
+    line-height: 59px;
+}
 
-    .searchbar:hover > .search_icon{
-    background: white;
-    color: #e74c3c;
-    }
 
-    .search_icon{
-    height: 40px;
-    width: 40px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:white;
-    }
+
+.icon-bg{
+    position:absolute;
+    left:0;top:0;bottom:0;
+    z-index:1;
+    width:100%;
+    transform:translate3d(-43px,0,0);
+    transition: all .2s ease-in-out;
+}
+
+.rad-txt-primary{
+    color:#1C7EBB;
+}
+.rad-bg-primary{
+    background:#1C7EBB;
+}
+.rad-txt-success{
+    color:#23AE89;
+}
+.rad-bg-success{
+    background:#23AE89;
+}
+.rad-txt-danger{
+    color:#E94B3B;
+}
+.rad-bg-danger{
+    background:#E94B3B;
+}
+.rad-txt-warning{
+    color:#F98E33;
+}
+.rad-bg-warning{
+    background:#F98E33;
+}
+.rad-txt-violet{
+    color:#6A55C2;
+}
+.rad-bg-violet{
+    background:#6A55C2;
+}
+
+.rad-info-box {
+    margin-bottom: 16px;
+    box-shadow: 1px 1px 2px 0 #CCCCCC;
+    padding: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background: white !important;
+}
+.rad-info-box .heading {
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.rad-info-box .value, .rad-info-box .heading {
+    display: block;
+    position: relative;
+    color: #515d6e;
+    text-align: right;
+    z-index: 10;
+}
+
+.rad-info-box .value {
+    font-size: 2.1em;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.rad-info-box .value, .rad-info-box .heading {
+    display: block;
+    position: relative;
+    color: #515d6e;
+    text-align: right;
+    z-index: 10;
+}
+
+.rad-info-box i {
+    display: block;
+    background-clip: padding-box;
+    margin-right: 15px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 4.4em;
+    position: absolute;
+}
+
+.side-navbar li.active > a{
+    color: #4c4c4c !important;
+    background-color: #f2f2f2;
+}
