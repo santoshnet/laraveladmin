@@ -182,7 +182,3 @@ border: 2px solid #ffffff45;
     position: absolute;
 }
 
-.side-navbar li.active > a{
-    color: #4c4c4c !important;
-    background-color: #f2f2f2;
-}
