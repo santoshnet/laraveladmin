@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Laravel Dashboard</title>
+      <title>@yield('title') | Laravel Admin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -48,9 +48,9 @@
           <h5 class="sidenav-heading">Main</h5>
           <ul id="side-main-menu" class="side-menu list-unstyled">                  
             <li class="{{Request::is('/')? 'active' : null }}"><a href="{{url('/')}}"> <i class="icon-home"></i>Home</a></li>
-            <li class="{{Request::is('home')? 'active' : null }}"><a href="{{url('home')}}"> <i class="icon-form"></i>Forms</a></li>
-            <li class="waves-effect"><a href="../home"> <i class="fa fa-bar-chart"></i>Charts</a></li>
-            <li class="waves-effect"><a href="../home"> <i class="icon-grid"></i>Tables</a></li>
+            <li class="{{Request::is('form')? 'active' : null }}"><a href="{{url('form')}}"> <i class="icon-form"></i>Forms</a></li>
+            <li class="{{Request::is('chart')? 'active' : null }}"><a href="{{url('chart')}}"> <i class="fa fa-bar-chart"></i>Charts</a></li>
+            <li class="{{Request::is('table')? 'active' : null }}"><a href="{{url('table')}}"> <i class="icon-grid"></i>Tables</a></li>
             <li class="waves-effect"><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
               <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
                 <li><a href="#">Page</a></li>
