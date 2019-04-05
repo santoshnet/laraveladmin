@@ -48,10 +48,20 @@
           <h5 class="sidenav-heading">Main</h5>
           <ul id="side-main-menu" class="side-menu list-unstyled">                  
             <li class="{{Request::is('/')? 'active' : null }}"><a href="{{url('/')}}"> <i class="icon-home"></i>Home</a></li>
-            <li class="{{Request::is('form')? 'active' : null }}"><a href="{{url('form')}}"> <i class="icon-form"></i>Forms</a></li>
+            
+             <li class="{{Request::is('form/*')? 'active' : null }}"><a href="#formDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Forms</a>
+              <ul id="formDropdown" class="collapse list-unstyled ">
+               
+               <li class="{{Request::is('basicform')? 'active' : null }}"><a href="{{route('basicform')}}">Basic Forms</a></li>
+               <li class="{{Request::is('advanceform')? 'active' : null }}"><a href="{{route('advanceform')}}">Advance Forms</a></li>
+               
+              </ul>
+            </li>
+           
             <li class="{{Request::is('chart')? 'active' : null }}"><a href="{{url('chart')}}"> <i class="fa fa-bar-chart"></i>Charts</a></li>
             <li class="{{Request::is('table')? 'active' : null }}"><a href="{{url('table')}}"> <i class="icon-grid"></i>Tables</a></li>
-            <li class="waves-effect"><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
+           
+            <li class=""><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
               <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
                 <li><a href="#">Page</a></li>
                 <li><a href="#">Page</a></li>

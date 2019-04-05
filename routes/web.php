@@ -25,9 +25,26 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/', function () {
 	    return view('dashboard');
 	});
-    Route::get('form', function () {
-	    return view('form');
-	});
+   // Route::group(['prefix'=>'formList'], function(){
+
+   //      Route::get('/basicform', function () {
+	  //   return view('form.basicform');
+   //  	})->name('basicform');
+
+   //      Route::get('/advanceform', function () {
+	  //    return view('form.advanceform');
+   //  	})->name('advanceform');
+
+   // });
+	 Route::get('/basicform', function () {
+	    return view('form.basicform');
+    	})->name('basicform');
+
+        Route::get('/advanceform', function () {
+	     return view('form.advanceform');
+    	})->name('advanceform');
+
+
 
 	Route::get('chart', function () {
 	    return view('chart');

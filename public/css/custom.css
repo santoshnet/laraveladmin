@@ -60,7 +60,7 @@ border: 2px solid #ffffff45;
 
 
 .card {
-    border-radius: 12px;
+    
     box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
     background-color: #FFFFFF;
     color: #252422;
@@ -135,6 +135,7 @@ border: 2px solid #ffffff45;
 }
 
 .rad-info-box {
+    border-radius: 12px;
     margin-bottom: 16px;
     box-shadow: 1px 1px 2px 0 #CCCCCC;
     padding: 20px;
@@ -182,3 +183,19 @@ border: 2px solid #ffffff45;
     position: absolute;
 }
 
+.input-group-addon {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #33b35a;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    
+}
+.input-group-addon, .input-group-btn {
+    white-space: nowrap;
+    vertical-align: middle;
+}
