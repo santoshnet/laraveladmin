@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// use Spatie\Permission\Models\Role;
+// use Spatie\Permission\Models\Permission; 
 
 // Route::get('/', function () {
 // 	    return view('welcome');
@@ -25,17 +27,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/', function () {
 	    return view('dashboard');
 	});
-   // Route::group(['prefix'=>'formList'], function(){
-
-   //      Route::get('/basicform', function () {
-	  //   return view('form.basicform');
-   //  	})->name('basicform');
-
-   //      Route::get('/advanceform', function () {
-	  //    return view('form.advanceform');
-   //  	})->name('advanceform');
-
-   // });
+  
 	 Route::get('/basicform', function () {
 	    return view('form.basicform');
     	})->name('basicform');
@@ -59,5 +51,20 @@ Route::group(['middleware' => 'auth'], function () {
         return redirect('/');
     });
 
+   
+    Route::resource('users', 'UserController');
+
+    Route::resource('roles', 'RoleController');
+
+    Route::resource('permissions', 'PermissionController');
+
+    Route::resource('posts', 'PostController');
+
 });
 
+ // Route::get('/create_role_permission', function(){
+ //        $role = Role::create(['name'=> 'Administer']);
+ //        $permission = Permission::create(['name'=> 'Administer roles & permissions']);
+ //        auth()->user()->assignRole('Administer');
+ //        auth()->user()->givePermissionTo('Administer roles & permissions');
+ //    });

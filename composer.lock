@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43316f822e49d371de62ae74c2db6f79",
+    "content-hash": "92136835f6a173819ee2cee0c622a2fb",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -461,16 +461,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.9",
+            "version": "v5.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "2455d21938e9072e5a8ecef64ae162a1825d336b"
+                "reference": "505325b4577968750e622d7a5a271cf8785a7a1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/2455d21938e9072e5a8ecef64ae162a1825d336b",
-                "reference": "2455d21938e9072e5a8ecef64ae162a1825d336b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/505325b4577968750e622d7a5a271cf8785a7a1a",
+                "reference": "505325b4577968750e622d7a5a271cf8785a7a1a",
                 "shasum": ""
             },
             "require": {
@@ -604,7 +604,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-04-02T14:11:17+00:00"
+            "time": "2019-04-04T13:39:49+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1465,6 +1465,71 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "2.36.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "0d9c442dc4361ce829986697bc436578d816a9ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/0d9c442dc4361ce829986697bc436578d816a9ca",
+                "reference": "0d9c442dc4361ce829986697bc436578d816a9ca",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/container": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/contracts": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/database": "~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.4.2|~3.5.0|~3.6.0|~3.7.0",
+                "phpunit/phpunit": "^5.7|6.2|^7.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 5.4 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "security",
+                "spatie"
+            ],
+            "time": "2019-03-05T14:58:35+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4375,16 +4440,16 @@
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "06b6ce404ee574e9c1787fb67bb9980ca4387c34"
+                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/06b6ce404ee574e9c1787fb67bb9980ca4387c34",
-                "reference": "06b6ce404ee574e9c1787fb67bb9980ca4387c34",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/1c42705be2b6c1de5904f8afacef5895cab44bf8",
+                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8",
                 "shasum": ""
             },
             "require": {
@@ -4411,7 +4476,7 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-            "time": "2019-04-03T18:37:40+00:00"
+            "time": "2019-04-04T09:56:43+00:00"
         },
         {
             "name": "webmozart/assert",

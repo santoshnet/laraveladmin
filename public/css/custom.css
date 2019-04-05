@@ -199,3 +199,7 @@ border: 2px solid #ffffff45;
     white-space: nowrap;
     vertical-align: middle;
 }
+
+p.teaser {
+    text-indent: 30px; 
+    }
