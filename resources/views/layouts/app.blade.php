@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.default.css') }}" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/button.css') }}">
     <!-- Favicon-->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -47,9 +48,21 @@
         <div class="main-menu" id="sidebar-menu">
           <h5 class="sidenav-heading">Main</h5>
           <ul id="side-main-menu" class="side-menu list-unstyled">                  
-            <li class="{{Request::is('/')? 'active' : null }}"><a href="{{url('/')}}"> <i class="icon-home"></i>Home</a></li>
+            <li class="{{Request::is('/')? 'active' : null }}"><a href="{{url('/')}}"> <i class="fa fa-tachometer"></i>Home</a></li>
             
-             <li class="{{Request::is('form/*')? 'active' : null }}"><a href="#formDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Forms</a>
+             <li class="{{Request::is('component/*')? 'active' : null }}"><a href="#componentDropdown" aria-expanded="false" data-toggle="collapse"> <i class="fa fa-archive"></i>components</a>
+              <ul id="componentDropdown" class="collapse list-unstyled ">
+               
+               <li class="{{Request::is('components/button')? 'active' : null }}"><a href="{{route('button')}}">Buttons</a></li>
+               <li class="{{Request::is('components/tab')? 'active' : null }}"><a href="{{route('tab')}}">Tab</a></li>
+               <li class="{{Request::is('components/card')? 'active' : null }}"><a href="{{route('card')}}">Cards</a></li>
+               <li class="{{Request::is('components/progressbar')? 'active' : null }}"><a href="{{route('progressbar')}}">Progressbar</a></li>
+               <li class="{{Request::is('components/grid')? 'active' : null }}"><a href="{{route('grid')}}">Grids</a></li>
+              
+              </ul>
+            </li>
+
+           <li class="{{Request::is('form/*')? 'active' : null }}"><a href="#formDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Forms</a>
               <ul id="formDropdown" class="collapse list-unstyled ">
                
                <li class="{{Request::is('basicform')? 'active' : null }}"><a href="{{route('basicform')}}">Basic Forms</a></li>
@@ -60,6 +73,9 @@
            
             <li class="{{Request::is('chart')? 'active' : null }}"><a href="{{url('chart')}}"> <i class="fa fa-bar-chart"></i>Charts</a></li>
             <li class="{{Request::is('table')? 'active' : null }}"><a href="{{url('table')}}"> <i class="icon-grid"></i>Tables</a></li>
+            <li class="{{Request::is('icon')? 'active' : null }}"><a href="{{url('icon')}}"> <i class="fa fa-tasks"></i>Icons</a></li>
+            <li class="{{Request::is('widget')? 'active' : null }}"><a href="{{url('widget')}}"> <i class="fa fa-th-large"></i>Widget</a></li>
+           
            
           </ul>
         </div>
@@ -188,6 +204,7 @@
     <script src="{{ asset('vendor/jquery-validation/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') }}"></script>
     <script src="{{ asset('js/charts-home.js') }}"></script>
+    <script src="{{ asset('js/charts-custom.js') }}"></script>
     <!-- Main File-->
     <script src="{{ asset('js/front.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>

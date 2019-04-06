@@ -42,15 +42,46 @@ Route::group(['middleware' => 'auth'], function () {
 	    return view('chart');
 	});
 
+	Route::get('icon', function () {
+	    return view('icon');
+	});
 	Route::get('table', function () {
 	    return view('table');
 	});
+	Route::get('widget', function () {
+	    return view('widget');
+	});
+	
 
 	Route::get('logout', function (){
         Auth::logout();
         return redirect('/');
     });
 
+
+   Route::group(['prefix'=>'components'], function(){
+       Route::get('/button', function () {
+	    return view('components.button');
+    	})->name('button');
+       
+        Route::get('/tab', function () {
+	     return view('components.tab');
+    	})->name('tab');
+
+       Route::get('/card', function () {
+	     return view('components.card');
+    	})->name('card');
+
+    	Route::get('/progressbar', function () {
+	     return view('components.progressbar');
+    	})->name('progressbar');
+    	
+    	Route::get('/grid', function () {
+	     return view('components.grid');
+    	})->name('grid');
+    	
+
+	});
    
     Route::resource('users', 'UserController');
 

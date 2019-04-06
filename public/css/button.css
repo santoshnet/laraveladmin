@@ -1,0 +1,30 @@
+.div-container{border-top:3px solid #428BCA;border-right:3px solid #D9534F;border-bottom:3px solid #5CB85C;border-left:3px solid #F0AD4E;margin:30px;border-radius:20px 20px 0px 0px}
+.div-heading{border-bottom:1px dashed #5BC0DE;padding-top:15px;padding-bottom:15px;margin:0px;background-color:#F5F5F5;border-radius:19px 19px 0px 0px}
+.heading{color:#5FC9E5}
+.div-content{padding:30px}
+.btn-lg
+{
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+.btn-xl
+{
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+.btn{transition:all 0.8s;-o-transition:all 0.8s;-moz-transition:all 0.8s;-webkit-transition:all 0.8s;border-radius:0px;margin-top:10px}
+.btn-rounded{border-radius:50px}
+.btn-round-tosquare:hover{border-radius:0px}
+.btn-square-toround:hover{border-radius:50px}
+.btn-bordered-primary{color:#428BCA;background:#FFFFFF;border:2px solid #428BCA}
+.btn-bordered-primary:hover{color:#FFFFFF;background:#428BCA;border:2px solid #FFFFFF}
+.btn-bordered-success{color:#5CB85C;background:#FFFFFF;border:2px solid #5CB85C}
+.btn-bordered-success:hover{color:#FFFFFF;background:#5CB85C;border:2px solid #FFFFFF}
+.btn-bordered-info{color:#5BC0DE;background:#FFFFFF;border:2px solid #5BC0DE}
+.btn-bordered-info:hover{color:#FFFFFF;background:#5BC0DE;border:2px solid #FFFFFF}
+.btn-bordered-warning{color:#F0AD4E;background:#FFFFFF;border:2px solid #F0AD4E}
+.btn-bordered-warning:hover{color:#FFFFFF;background:#F0AD4E;border:2px solid #FFFFFF}
+.btn-bordered-danger{color:#D9534F;background:#FFFFFF;border:2px solid #D9534F}
+.btn-bordered-danger:hover{color:#FFFFFF;background:#D9534F;border:2px solid #FFFFFF}
