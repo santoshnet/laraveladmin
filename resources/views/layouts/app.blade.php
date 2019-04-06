@@ -37,11 +37,11 @@
         <!-- Sidebar Header    -->
         <div class="sidenav-header d-flex align-items-center justify-content-center">
           <!-- User Info-->
-          <div class="sidenav-header-inner text-center"><img src="img/user.jpg" alt="person" class="img-fluid rounded-circle">
+          <div class="sidenav-header-inner text-center"><img src="{{URL::asset('img/user.jpg')}}" alt="person" class="img-fluid rounded-circle">
             <h2 class="h5">Santosh Kumar Dash</h2><span>Web Developer</span>
           </div>
           <!-- Small Brand information, appears on minimized sidebar-->
-          <div class="sidenav-header-logo"><a href="index.html" class="brand-small text-center"> <img src="img/ld.png" class="img-thumbnail"></a></div>
+          <div class="sidenav-header-logo"><a href="index.html" class="brand-small text-center"> <img src="{{URL::asset('img/ld.png')}}" class="img-thumbnail"></a></div>
         </div>
         <!-- Sidebar Navigation Menus-->
         <div class="main-menu" id="sidebar-menu">
@@ -61,28 +61,30 @@
             <li class="{{Request::is('chart')? 'active' : null }}"><a href="{{url('chart')}}"> <i class="fa fa-bar-chart"></i>Charts</a></li>
             <li class="{{Request::is('table')? 'active' : null }}"><a href="{{url('table')}}"> <i class="icon-grid"></i>Tables</a></li>
            
-            <li class=""><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
-              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                <li><a href="#">Page</a></li>
-                <li><a href="#">Page</a></li>
-                <li><a href="#">Page</a></li>
-              </ul>
-            </li>
-            <li><a href="login.html"> <i class="icon-interface-windows"></i>Login page</a></li>
-            <li> <a href="#"> <i class="icon-mail"></i>Demo
-                <div class="badge badge-warning">6 New</div></a></li>
           </ul>
         </div>
+        
         <div class="admin-menu">
-          <h5 class="sidenav-heading">Second menu</h5>
+          <h5 class="sidenav-heading">Admin menu</h5>
           <ul id="side-admin-menu" class="side-menu list-unstyled"> 
-            <li> <a href="#"> <i class="icon-screen"> </i>Demo</a></li>
-            <li> <a href="#"> <i class="icon-flask"> </i>Demo
-                <div class="badge badge-info">Special</div></a></li>
-            <li> <a href=""> <i class="icon-flask"> </i>Demo</a></li>
-            <li> <a href=""> <i class="icon-picture"> </i>Demo</a></li>
+              <li class=""><a href="#userDropdown" aria-expanded="false" data-toggle="collapse"> <i class="fa fa-users"></i>User Management</a>
+                <ul id="userDropdown" class="collapse list-unstyled ">
+                   <li class="{{Request::is('users/create')? 'active' : null }}"><a href="{{ route('users.create') }}">Add User</a></li>
+                   <li class="{{Request::is('users')? 'active' : null }}"><a href="{{ route('users.index') }}">Users List</a></li>
+             
+                </ul>
+              </li>
+              <li class=""><a href="#roleDropdown" aria-expanded="false" data-toggle="collapse"> <i class="fa fa-user-secret" aria-hidden="true"></i>Role Permission</a>
+                <ul id="roleDropdown" class="collapse list-unstyled ">
+                   <li class="{{Request::is('roles')? 'active' : null }}"><a href="{{ route('roles.index') }}">Manage Role</a></li>
+                   <li class="{{Request::is('permissions')? 'active' : null }}"><a href="{{ route('permissions.index') }}">Manage Permission</a></li>
+                   
+                </ul>
+              </li>
+
           </ul>
         </div>
+
       </div>
     </nav>
     <div class="page">
