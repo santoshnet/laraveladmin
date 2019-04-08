@@ -15,10 +15,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <!-- App css -->
-       <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+       <link rel="stylesheet" href="{{ asset('vendors/bootstrap/css/bootstrap.min.css') }}">
        <link rel="stylesheet" href="{{ asset('css/login.css') }}">
        <!-- Font Awesome CSS-->
-       <link rel="stylesheet" href="{{ asset('vendor/font-awesome/css/font-awesome.min.css') }}">
+       <link rel="stylesheet" href="{{ asset('vendors/font-awesome/css/font-awesome.min.css') }}">
 
         <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,8 +44,8 @@
         @yield('content')
 
 
-        <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-        <script src="{{ asset('vendor/popper.js/umd/popper.min.js') }}"> </script>
-        <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('vendors/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('vendors/popper.js/umd/popper.min.js') }}"> </script>
+        <script src="{{ asset('vendors/bootstrap/js/bootstrap.min.js') }}"></script>
     </body>
 </html>

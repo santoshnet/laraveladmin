@@ -9,9 +9,9 @@
     <meta name="robots" content="all,follow">
     
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/bootstrap/css/bootstrap.min.css') }}">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="{{ asset('vendor/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/font-awesome/css/font-awesome.min.css') }}">
     <!-- Fontastic Custom icon font-->
     <link rel="stylesheet" href="{{ asset('css/fontastic.css') }}">
     <!-- Google fonts - Roboto -->
@@ -19,7 +19,7 @@
     <!-- jQuery Circle-->
     <link rel="stylesheet" href="{{ asset('css/grasp_mobile_progress_circle-1.0.0.min.css') }}">
     <!-- Custom Scrollbar-->
-    <link rel="stylesheet" href="{{ asset('vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css') }}">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="{{ asset('css/style.default.css') }}" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
@@ -195,14 +195,14 @@
       </footer>
     </div>
     <!-- JavaScript files-->
-    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('vendor/popper.js/umd/popper.min.js') }}"> </script>
-    <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('vendors/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendors/popper.js/umd/popper.min.js') }}"> </script>
+    <script src="{{ asset('vendors/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/grasp_mobile_progress_circle-1.0.0.min.js') }}"></script>
-    <script src="{{ asset('vendor/jquery.cookie/jquery.cookie.js') }}"> </script>
-    <script src="{{ asset('vendor/chart.js/Chart.min.js') }}"></script>
-    <script src="{{ asset('vendor/jquery-validation/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ asset('vendors/jquery.cookie/jquery.cookie.js') }}"> </script>
+    <script src="{{ asset('vendors/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ asset('vendors/jquery-validation/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') }}"></script>
     <script src="{{ asset('js/charts-home.js') }}"></script>
     <script src="{{ asset('js/charts-custom.js') }}"></script>
     <!-- Main File-->
